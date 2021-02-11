@@ -4,9 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Password Generator</title>
 </head>
 <body>
+    <header>
+    <h1>Password Generator</h1>
+    </header>
+    <section class="passgen">
+        <article class="cardheader">
+        <h2>Generate a Password</h2>
+        </article>
+        <article class="cardbody">
+          <textarea readonly id="password" placeholder="Your Secure Password" aria-label="Generated Password"></textarea>
+        </article>
+        <article class="button">
+          <button id="generate" class="btn">Generate Password</button>
+        </article>
+    </section>
     <script src="assets/script/passgen.js"></script>
 </body>
 </html>
