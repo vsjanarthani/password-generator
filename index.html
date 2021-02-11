@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Meta tags -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+<!-- Linking stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Password Generator</title>
 </head>
+
+<!-- Body -->
 <body>
     <header>
     <h1>Password Generator</h1>
     </header>
+
     <section class="passgen">
         <article class="cardheader">
         <h2>Generate a Password</h2>
@@ -20,9 +26,24 @@
           <textarea readonly id="password" placeholder="Your Secure Password" aria-label="Generated Password"></textarea>
         </article>
         <article class="button">
-          <button id="generate" class="btn">Generate Password</button>
+          <button id="generate" class="btn" type="button" onclick="promptDisplay();">Generate Password</button>
         </article>
     </section>
-    <script src="assets/script/passgen.js"></script>
+    <!-- 
+    <section>
+    <form id="displaychoice">
+      <p>Please select the length & character types to include in the password</p>
+      <input type="number" id="length" name="passlen" value="number">
+      <textarea id="passLen"></textarea>
+      <input type="radio" id="uppercase" name="uppercase" value="uppercase">
+      <label for="uppercase">Uppercase</label><br>
+      <input type="radio" id="lowercase" name="lowercacse" value="lowercase">
+      <label for="lowercase">Lowercase</label><br>
+      <input type="radio" id="numbers" name="numbers" value="numbers">
+      <label for="numbers">Numbers</label>
+      <input type="radio" id="symbols" name="symbols" value="symbols">
+      <label for="symbols">Numbers</label>
+    </section> -->
+  <script src="assets/script/passgen.js"></script> 
 </body>
 </html>

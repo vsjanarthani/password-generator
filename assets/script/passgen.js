@@ -4,6 +4,12 @@ const lower = "abcdefghijklmnopqrstuvwxyz";
 const number = "0123456789";
 const symbol = "!\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
 
+// Function to display prompt when generate password button is clicked in HTML
+function promptDisplay() {
+    window.prompt ("Hi There!");
+}
+
+
 // Function to get random uppercase
 function uppperCase() {
     return upper [Math.floor(Math.random() * upper.length)];  
