@@ -117,7 +117,115 @@ button[disabled] {
   overflow: hidden;
 }
 
-@media (max-width: 690px) {
+/* Hidden form styles */
+
+.form {
+  width: 70%;
+  height: 50%;
+  display: flex;
+  position: fixed;
+  top: 35%;
+  left: 75%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-60%, -52%) scale(0);
+  
+}
+
+.active {
+  transform: translate(-60%, -52%) scale(1);
+} 
+
+#hiddenform {
+  width: 50%;
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: black;
+  border-radius: 30px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0px 0px 8px 0p
+  }
+
+#hiddenform p, 
+#hiddenform label {
+    color: white;
+    margin: 10px;
+    padding: 7px 15px;
+    font-size: 16px;
+    width: 80%;
+    margin-bottom: 15px;
+}
+#hiddenform p {
+  text-decoration: underline;
+  text-transform: capitalize;
+  text-align: center;
+}  
+
+.passlength {
+  margin: 10px 20px 3px 16px;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+#passLen {
+  width: 50%;
+  height: 70%;
+  margin-left: 40px;
+  padding-left: 10px;
+} 
+
+.heading {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+::placeholder { 
+  color: black;
+  font-size: small;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: justify;
+}
+
+.button1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  
+}
+
+#submit {
+  color: white;
+  background-color: grey;
+  border: blanchedalmond;
+  border-radius: 20%;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#submit[disabled] {
+  cursor: default;
+}
+
+@media (max-width: 1200px) {
+  .active {
+    width: 90%; 
+    transform: translate(-55%, -52%) scale(1);
+  }
+
+  .passlength {
+    margin: 10px 18px 3px 15px; 
+  }
+
+}
+
+@media (max-width: 900px) {
   .btn {
     font-size: 1rem;
     margin: 16px 0px 0px 0px;
@@ -128,15 +236,75 @@ button[disabled] {
     font-size: 1rem;
   }
 
-@media (max-width: 500px) {
+  .passlength {
+    margin: 10px 0 0 0;
+    padding-left: 10px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
 
-    .cardheader h2 {
-        text-align: center;
-        font-size: larger;
-    }
+  #passLen {
+    width: 50%;
+    height: 30%;
+  } 
 
-    .btn {
-        font-size: 0.8rem;
-    }
-  
+  ::placeholder { 
+    font-size: x-small;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .active {
+    width: 100%;
+    transform: translate(-54%, -52%) scale(1);
+  }
+  #hiddenform p, 
+  #hiddenform label,
+  #submit {
+      font-size: 12px;
+  }
+}  
+
+@media (max-width: 600px) {
+
+.cardheader h2 {
+      text-align: center;
+      font-size: larger;
+  }
+
+.btn {
+      font-size: 0.8rem;
+  }
+
+  #hiddenform,
+  .passlength {
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  #hiddenform p, 
+  #hiddenform label,
+  #submit,
+  ::placeholder {
+    font-size: 10px;
+  }
+
+  .active {
+    height: fit-content;
+    transform: translate(-55%, -30%) scale(1);
+  }
+  .passlength {
+    margin-top: 0;
+  }
+
+  #passLen {
+    margin-right: 40px;
+  }
+  #submit {
+    margin-top: 10px;
+  }
 }
