@@ -233,7 +233,7 @@ button[disabled] {
   }
 
   #password {
-    font-size: 1rem;
+    font-size: 14px;
   }
 
   .passlength {
@@ -290,6 +290,10 @@ button[disabled] {
   #hiddenform label,
   #submit,
   ::placeholder {
+    font-size: 10px;
+  }
+
+  #password {
     font-size: 10px;
   }
 
