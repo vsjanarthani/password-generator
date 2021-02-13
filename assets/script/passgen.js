@@ -6,6 +6,12 @@ const upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ", lower = "abcdefghijklmnopqrstuvwxyz"
 function promptDisplay() {
     var element = document.getElementById("display");
     element.classList.add("active");
+    document.getElementById("password").innerText = "";
+    document.getElementById("passLen").value = "";
+    document.getElementById("uppercase").checked = false;
+    document.getElementById("lowercase").checked = false;
+    document.getElementById("numbers").checked = false;
+    document.getElementById("symbols").checked = false;
   }
 
 // Function to remove prompt after submit button is clicked
@@ -16,11 +22,9 @@ function removeDisplay() {
 
 function getInput() {
 
-//   DOM elements in hidden form
-
+//   DOM elements in hidden form  
     const passlength = document.getElementById("passLen").value;
     const passlength1= parseInt(passlength);
-    console.log(passlength1);
     const checkedUc = document.getElementById("uppercase").checked;
     const checkedLc = document.getElementById("lowercase").checked;
     const checkedNo = document.getElementById("numbers").checked;

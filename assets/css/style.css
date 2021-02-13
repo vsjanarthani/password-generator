@@ -165,7 +165,7 @@ button[disabled] {
 }  
 
 .passlength {
-  margin: 10px 20px 3px 16px;
+  margin: 10px 20px 3px 20px;
   width: 100%;
   display: flex;
   flex-wrap: nowrap;
