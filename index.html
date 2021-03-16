@@ -36,17 +36,25 @@
         <p>Please make your selection</p>
         </section>
         <section class="passlength">
-        <label for="textarea">Password Length</label>
+        <label for="textarea">Length</label>
         <textarea id="passLen" placeholder="Value: 8 - 128" required></textarea>
         </section>
-        <label for="uppercase">Uppercase</label>
-        <input type="checkbox" id="uppercase" name="uppercase">
-        <label for="lowercase">Lowercase</label>
-        <input type="checkbox" id="lowercase" name="lowercacse">
-        <label for="numbers">Numbers</label>
-        <input type="checkbox" id="numbers" name="numbers">
-        <label for="symbols">Symbols</label>
-        <input type="checkbox" id="symbols" name="symbols">
+        <div class="checkboxes">
+          <label for="uppercase">Uppercase</label>
+          <input type="checkbox" id="uppercase" name="uppercase">
+        </div>
+        <div class="checkboxes">
+          <label for="lowercase">Lowercase</label>
+          <input type="checkbox" id="lowercase" name="lowercacse">
+        </div>
+        <div class="checkboxes">
+          <label for="numbers">Numbers</label>
+          <input type="checkbox" id="numbers" name="numbers">
+        </div>
+        <div class="checkboxes">
+          <label for="symbols">Symbols</label>
+          <input type="checkbox" id="symbols" name="symbols">
+        </div>
         <section class ="button1">
         <button id="submit" class="formbtn" type="button" onclick="getInput();">Submit</button>
         </section>
